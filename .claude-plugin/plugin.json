@@ -1,0 +1,8 @@
+{
+  "name": "video-skills",
+  "version": "0.1.0",
+  "description": "Handwerk fuer Videoschnitt mit ffmpeg: Transkripte mit Wortzeiten, Schnittgrenzen als Bildindex, Bild/Ton-Synchronitaet pruefen, Bildausschnitte aus fertigen Renders zurueckmessen, Mehrkamera-Material nach Einstellungen clustern, framegenau schneiden. Produktionsunabhaengig, der Look bleibt im jeweiligen Projekt-Repo.",
+  "author": { "name": "Thomas Hefke", "url": "https://github.com/thefke" },
+  "license": "MIT",
+  "keywords": ["video", "ffmpeg", "whisper", "reels", "schnitt", "transkript", "lipsync"]
+}

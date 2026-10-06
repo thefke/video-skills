@@ -1,0 +1,10 @@
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.png
+*.jpg
+.DS_Store
+__pycache__/
+*.pyc
+.venv/

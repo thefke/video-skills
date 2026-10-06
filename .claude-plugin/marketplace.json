@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "thefke-video-skills",
+  "owner": { "name": "Thomas Hefke" },
+  "metadata": {
+    "description": "Videoschnitt-Handwerk, das in jedem Projekt gleich ist."
+  },
+  "plugins": [
+    {
+      "name": "video-skills",
+      "source": "./",
+      "description": "Transkripte mit Wortzeiten, Schnittgrenzen als Bildindex, Synchronitaetspruefung, Ausschnitte zurueckmessen, Mehrkamera clustern, framegenau schneiden.",
+      "author": { "name": "Thomas Hefke", "url": "https://github.com/thefke" },
+      "category": "media"
+    }
+  ]
+}
