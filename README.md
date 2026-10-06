@@ -7,7 +7,7 @@ fertigen Renders zurueckmessen, Mehrkamera-Material clustern, framegenau schneid
 Der Look bleibt im jeweiligen Projekt-Repo. Faustregel: Was bei einer anderen Produktion
 wortgleich waere, gehoert hierher. Was Geschmack oder Kundenfreigabe abbildet, nicht.
 
-Entstanden aus der Reel-Produktion fuer den REAL TALK Podcast und eigene Clips.
+Entstanden aus der Praxis: Reel-Produktion aus langen Interview-Aufzeichnungen.
 
 ## Installation
 
