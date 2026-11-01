@@ -30,7 +30,7 @@ Dieses Repo ist die Quelle und wird hier gepflegt. Der Marketplace verweist per
 | `video-schnittgrenzen` | Schnitte eines Renders als Bildindex bestimmen |
 | `video-sync` | Bild gegen Ton pruefen, gehoert in jede Abnahme |
 | `video-ausschnitt` | 9:16-Crop aus einem fertigen Render zurueckmessen |
-| `video-kameras` | Mehrkamera-Material clustern und Sprecher zuordnen |
+| `video-kameras` | Mehrkamera-Material clustern, Kamerakarte mit Zielperson, Schnitte der Regie pruefen, ein Ausschnitt je Kamera |
 | `video-schnitt` | Framegenau schneiden und Segmente ersetzen |
 
 ## Voraussetzungen

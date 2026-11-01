@@ -31,6 +31,27 @@ Braucht `faster-whisper` und `ffmpeg`.
 - Laufzeit grob: `small` auf CPU etwa 1,8-fache Echtzeit. Eine Stunde Material also
   rund 35 Minuten. Lange Transkripte im Hintergrund laufen lassen und mitschreiben.
 
+## Fensterraender
+
+- Endet ein Transkriptionsfenster mitten im Wort, raet das Modell den Rest. Belegt: Fenster
+  endete bei 3749,5 s in „unbedingt“, das Modell schrieb „umsetzen“. Ein zweiter Lauf mit
+  Rand hoerte „nicht unbedingt machen“. Faengt ein Fenster genau an einem Wort an, faellt
+  das Wort oft ganz weg (belegt: „und RevPAR“ verloren). Fenster deshalb immer mit 2 bis 3 s
+  Rand vor und nach dem Clip transkribieren und nur Woerter uebernehmen, die ganz drinliegen.
+- Die Schlusszeile eines Clips nie aus einem Fenster nehmen, das an dieser Stelle endet.
+- Hoeren zwei Laeufe eine Stelle verschieden, einen dritten mit anderem Modell dazunehmen.
+  Bleibt es unklar, die Stelle aus dem Clip schneiden statt sie zu raten.
+
+## Lange Laeufe im Hintergrund
+
+- `befehl1 && befehl2 && whisper ... &` schickt die ganze Kette in den Hintergrund, auch den
+  ersten Befehl. Wer danach denselben Schritt noch einmal startet, hat zwei Laeufe, die sich
+  die CPU teilen, und einer liest womoeglich eine halb geschriebene Datei. Vorbereitung im
+  Vordergrund, nur den Lauf selbst in den Hintergrund.
+- Auf das Ende eines Laufs nicht mit `until ! pgrep -f name` warten: Die Warteschleife traegt
+  den Namen selbst in ihrer Befehlszeile und findet sich immer. Auf die Ausgabedatei warten
+  oder die Prozessnummer merken.
+
 ## Danach
 
 Schnittgrenzen gegen den Text pruefen: Ein Clip endet am Satzende. Faengt die Person
