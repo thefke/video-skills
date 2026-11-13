@@ -32,7 +32,9 @@ Dieses Repo ist die Quelle und wird hier gepflegt. Der Marketplace verweist per
 | `video-ausschnitt` | 9:16-Crop aus einem fertigen Render zurueckmessen |
 | `video-kameras` | Mehrkamera-Material clustern, Kamerakarte mit Zielperson, Schnitte der Regie pruefen, ein Ausschnitt je Kamera |
 | `video-schnitt` | Framegenau schneiden und Segmente ersetzen |
+| `video-bildcheck` | Gerenderte Bilder per OCR gegen Verbotslisten pruefen, vor jeder Freigabe |
 
 ## Voraussetzungen
 
 `ffmpeg` (Version 9 getestet), Python mit `faster-whisper`, `numpy`, `Pillow`.
+Fuer `video-bildcheck` zusaetzlich `tesseract-ocr` mit `tesseract-ocr-deu`.

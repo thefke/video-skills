@@ -1,7 +1,7 @@
 {
   "name": "video-skills",
-  "version": "0.1.0",
-  "description": "Handwerk fuer Videoschnitt mit ffmpeg: Transkripte mit Wortzeiten, Schnittgrenzen als Bildindex, Bild/Ton-Synchronitaet pruefen, Bildausschnitte aus fertigen Renders zurueckmessen, Mehrkamera-Material nach Einstellungen clustern, framegenau schneiden. Produktionsunabhaengig, der Look bleibt im jeweiligen Projekt-Repo.",
+  "version": "0.2.0",
+  "description": "Handwerk fuer Videoschnitt mit ffmpeg: Transkripte mit Wortzeiten, Schnittgrenzen als Bildindex, Bild/Ton-Synchronitaet pruefen, Bildausschnitte aus fertigen Renders zurueckmessen, Mehrkamera-Material nach Einstellungen clustern, framegenau schneiden, gerenderte Bilder per OCR gegen Verbotslisten pruefen. Produktionsunabhaengig, der Look bleibt im jeweiligen Projekt-Repo.",
   "author": {
     "name": "Thomas Hefke",
     "url": "https://github.com/thefke"
@@ -14,7 +14,8 @@
     "reels",
     "schnitt",
     "transkript",
-    "lipsync"
+    "lipsync",
+    "ocr"
   ],
   "displayName": "Video Skills",
   "repository": "https://github.com/thefke/video-skills"
